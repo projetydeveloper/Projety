@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/listvw_item_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="TODO"
+        android:src="@color/background_floating_material_dark"
+        />
+
+
+    <TextView
+        android:id="@+id/listvw_item_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/listvw_item_icon"
+        android:layout_toRightOf="@+id/listvw_item_icon"
+        android:paddingLeft="8dp"
+        android:text="Titre"
+        android:textSize="16sp"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/listvw_item_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listvw_item_text1"
+        android:paddingLeft="8dp"
+        android:layout_toRightOf="@+id/listvw_item_icon"
+        android:text="Organisateur"
+        android:textSize="14sp"
+        android:singleLine="true"
+        />
+        <TextView
+            android:id="@+id/listvw_item_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listvw_item_text2"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="8dp"
+            android:layout_toRightOf="@+id/listvw_item_icon"
+            android:text="Horaire"
+            android:textSize="14sp"
+            android:singleLine="true"
+            />
+</RelativeLayout>

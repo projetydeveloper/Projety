@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_activity_mail_sign_up">S inscrire</string>
+
+    <!-- Strings related to login -->
+    <string name="action_mail_sign_up">Inscription</string>
+
+
+</resources>

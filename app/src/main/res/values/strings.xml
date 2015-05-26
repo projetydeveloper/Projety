@@ -1,3 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Projety</string>
+    <string name="title_activity_home">Sorties</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Choose Dance</string>
+    <string name="action_filter_ok">OK</string>
+    <string name="action_filter_cancel">Cancel</string>
+    <string name="twitter_key">Aja4Ih84Pl3M7ZCToUUs3hdOP</string>
+    <string name="facebook_app_id">853344334722458</string>
+    <string name="twitter_secret">jhRMHtwxOqMzyLSNlq42P8ZgcVP5hbjLAMOIxYSgdYRMV7aFxw</string>
+
+    <string name="today">Aujourdhui</string>
+    <string name="tomorrow">Demain</string>
+
+    <string-array name="dance_array">
+        <item>Rock</item>
+        <item>Salsa</item>
+        <item>Swing</item>
+        <item>Tango</item>
+        <item>Batchata</item>
+        <item>Kizomba</item>
+        <item>Charleston</item>
+        <item>West Cost Swing</item>
+    </string-array>
+
+    <string-array name="home_array_tabtitles">
+        <item>Soirées</item>
+        <item>Stages</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_event_details">EventDetailsActivity</string>
+
 </resources>
