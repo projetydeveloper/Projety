@@ -1,4 +1,4 @@
-package com.projety.view.listview;
+package com.projety.view.listview.party;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,26 +15,24 @@ import java.util.List;
 /**
  * Created by Djeme Mahamat on 05/04/2015.
  */
-public class HomeEventAdapterBcp extends ArrayAdapter<EventListItemBcp> {
+public class HomePartyAdapter extends ArrayAdapter<PartyListItem> {
 
     private final Context context;
-    private List<EventListItemBcp> evtList;
+    private List<PartyListItem> parties;
 
 
-    public HomeEventAdapterBcp(Context context, ArrayList<EventListItemBcp> evtList) {
+    public HomePartyAdapter(Context context, ArrayList<PartyListItem> parties) {
 
-        super(context, R.layout.listview_event_item, evtList);
+        super(context, R.layout.listview_event_item, parties);
 
         this.context = context;
-        this.evtList = evtList;
+        this.parties = parties;
     }
 
     @Override
     public int getCount() {
         return super.getCount();
     }
-
-
 
 
     @Override
@@ -48,34 +46,29 @@ public class HomeEventAdapterBcp extends ArrayAdapter<EventListItemBcp> {
         View rowView = null;
 
 
-        if (evtList.get(position).getType() == EventListItemBcp.TYPE_GROUP_ITEM) {
+        if (parties.get(position).getType() == PartyListItem.TYPE_GROUP_ITEM) {
 
             rowView = inflater.inflate(R.layout.listview_event_item, parent, false);
 
             TextView titleView1 = (TextView) rowView.findViewById(R.id.listvw_item_text1);
-            titleView1.setText(evtList.get(position).getTitre());
+            titleView1.setText(parties.get(position).getParty().getTitle());
 
             TextView titleView2 = (TextView) rowView.findViewById(R.id.listvw_item_text2);
-            titleView2.setText(evtList.get(position).getLieu());
+            titleView2.setText(parties.get(position).getParty().getLocation().getName());
 
             TextView titleView3 = (TextView) rowView.findViewById(R.id.listvw_item_text3);
-            titleView3.setText(evtList.get(position).getHoraire());
+            titleView3.setText("" + parties.get(position).getParty().getStartDate());
 
-        } else if (evtList.get(position).getType() == EventListItemBcp.TYPE_GROUP_HEADER) {
+        } else if (parties.get(position).getType() == PartyListItem.TYPE_GROUP_HEADER) {
 
             rowView = inflater.inflate(R.layout.listview_event_group_header, parent, false);
             TextView titleView = (TextView) rowView.findViewById(R.id.header);
-            titleView.setText(evtList.get(position).getTitre());
+            titleView.setText(parties.get(position).getHeaderTitle());
         }
 
         // 5. return rowView
         return rowView;
     }
-
-
-
-
-
 
 
 }

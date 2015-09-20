@@ -38,6 +38,9 @@ android {
 repositories {
     mavenCentral()
     maven { url 'https://maven.fabric.io/public' }
+    maven {
+        url 'https://oss.sonatype.org/content/groups/public/'
+    }
 }
 
 dependencies {
@@ -50,9 +53,11 @@ dependencies {
     compile 'com.facebook.android:facebook-android-sdk:3.21.1'
     compile 'org.lucasr.twowayview:twowayview:0.1.4'
     compile 'de.hdodenhof:circleimageview:1.2.2'
-
-
-
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.vincentbrison.openlibraries.android:dualcache:2.0.0@jar'
 }
 
 

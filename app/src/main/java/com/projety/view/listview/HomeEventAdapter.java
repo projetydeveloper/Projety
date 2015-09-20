@@ -48,7 +48,7 @@ public class HomeEventAdapter extends ArrayAdapter<EventListItem> {
         View rowView = null;
 
 
-        if (evtList.get(position).getType() == EventListItemBcp.TYPE_GROUP_ITEM) {
+        if (evtList.get(position).getType() == EventListItem.TYPE_GROUP_ITEM) {
 
             rowView = inflater.inflate(R.layout.listview_event_item, parent, false);
 
@@ -61,7 +61,7 @@ public class HomeEventAdapter extends ArrayAdapter<EventListItem> {
             TextView titleView3 = (TextView) rowView.findViewById(R.id.listvw_item_text3);
             titleView3.setText(evtList.get(position).getEvt().getHoraire());
 
-        } else if (evtList.get(position).getType() == EventListItemBcp.TYPE_GROUP_HEADER) {
+        } else if (evtList.get(position).getType() == EventListItem.TYPE_GROUP_HEADER) {
 
             rowView = inflater.inflate(R.layout.listview_event_group_header, parent, false);
             TextView titleView = (TextView) rowView.findViewById(R.id.header);

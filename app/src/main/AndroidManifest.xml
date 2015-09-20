@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:name=".ProjetYApplication"
+        android:name="com.projety.app.ProjetYApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -36,6 +36,11 @@
         <meta-data
             android:name="com.crashlytics.ApiKey"
             android:value="d8b56a84dc22d9f72b46b85c9cda728156cba244" />
+
+
+        <meta-data android:name="AA_DB_NAME" android:value="projety.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+
 
         <activity
             android:name="com.projety.activity.HomeActivity"
