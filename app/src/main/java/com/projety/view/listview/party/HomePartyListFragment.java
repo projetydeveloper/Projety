@@ -17,7 +17,6 @@ import com.projety.app.R;
 import com.projety.model.Evenement;
 import com.projety.model.Parties;
 import com.projety.model.Party;
-import com.projety.view.listview.EventListItem;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -115,9 +114,12 @@ public class HomePartyListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
 
+        Intent intent = new Intent(getActivity(), EventDetailsActivity.class);
+
+
+        /**
         EventListItem EvtItem = (EventListItem) l.getItemAtPosition(position);
 
-        Intent intent = new Intent(getActivity(), EventDetailsActivity.class);
 
         Bundle objBundle = new Bundle();
         objBundle.putString("title", EvtItem.getEvt().getTitre());
@@ -130,6 +132,7 @@ public class HomePartyListFragment extends ListFragment {
         objBundle.putString("price", EvtItem.getEvt().getPrix());
         objBundle.putString("desc", EvtItem.getEvt().getDescription());
         intent.putExtra("event_item", objBundle);
+         **/
 
         startActivity(intent);
 
